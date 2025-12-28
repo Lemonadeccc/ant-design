@@ -15,6 +15,41 @@ tag: vVERSION
 
 ---
 
+## 6.1.2
+
+`2025-12-24`
+
+- 🐞 修复 Wave 组件水波纹消失的问题，以及 Button 组件在配置 Dropdown 后，点击触发再次 `hover` 时无法立刻显示 Dropdown 的问题。[#56273](https://github.com/ant-design/ant-design/pull/56273) [@zombieJ](https://github.com/zombieJ)
+- 🐞 修复 Form.List 使用 `useWatch` 时，删除项会触发两次渲染，第一次为不正确的中间状态的问题。[#56319](https://github.com/ant-design/ant-design/pull/56319) [@QDyanbing](https://github.com/QDyanbing)
+- 💄 修复 Breadcrumb 组件自定义 `itemRender` 时的链接颜色异常的问题。[#56253](https://github.com/ant-design/ant-design/pull/56253) [@guoyunhe](https://github.com/guoyunhe)
+- Transfer
+  - 💄 修复 Transfer 组件在禁用时不存在选择状态样式类的问题。[#56316](https://github.com/ant-design/ant-design/pull/56316) [@zenggpzqbx](https://github.com/zenggpzqbx)
+  - 🐞 优化 Transfer 组件逻辑，确保优先使用 `disabled` 属性。[#56280](https://github.com/ant-design/ant-design/pull/56280) [#56093](https://github.com/ant-design/ant-design/pull/56093) [@zenggpzqbx](https://github.com/zenggpzqbx)
+- Select
+  - 🐞 修复 Select 组件缺少语义化 DOM 名称的问题。[#56322](https://github.com/ant-design/ant-design/pull/56322) [@seanparmelee](https://github.com/seanparmelee)
+  - 🐞 修复 Select 组件在搜索状态下鼠标手型样式不对的问题。[#56130](https://github.com/ant-design/ant-design/pull/56130) [@fpsqdb](https://github.com/fpsqdb)
+  - 🐞 修复 Select 在同时设置 `showSearch` 和 `disabled` 时鼠标样式不为禁用的问题。[#56340](https://github.com/ant-design/ant-design/pull/56340) [@QDyanbing](https://github.com/QDyanbing)
+- 💄 修复 Card 组件在使用 Card.Grid 且未设置头部内容时，边框圆角显示异常的问题。[#56214](https://github.com/ant-design/ant-design/pull/56214) [@DDDDD12138](https://github.com/DDDDD12138)
+- 💄 Tag 加深默认背景，提升无边框状态的对比度。[#56326](https://github.com/ant-design/ant-design/pull/56326) [@QDyanbing](https://github.com/QDyanbing)
+- 🐞 修复 Segmented 组件中多余的 `role` 属性和 `aria` 属性。[#56278](https://github.com/ant-design/ant-design/pull/56278) [@aojunhao123](https://github.com/aojunhao123)
+
+## 6.1.1
+
+`2025-12-15`
+
+- 🐞 修复 DatePicker 不兼容 webpack 4 的问题：Can't resolve '@rc-component/picker/locale/en_US'。[#56219](https://github.com/ant-design/ant-design/pull/56219) [@afc163](https://github.com/afc163)
+- 🐞 修复 ColorPicker 弹层内输入框高度不一致问题。[#56220](https://github.com/ant-design/ant-design/pull/56220) [@ug-hero](https://github.com/ug-hero)
+- 🐞 修复 notification 在 cssVar 未启用时默认背景色不为白色的问题。[#56169](https://github.com/ant-design/ant-design/pull/56169) [@wanpan11](https://github.com/wanpan11)
+- 🐞 修复 Input 在 Space.Compact 下配置 `allowClear` 时聚焦边框丢失的问题。[#56105](https://github.com/ant-design/ant-design/pull/56105) [@tuzixiangs](https://github.com/tuzixiangs)
+- 🐞 修复 Splitter 在 RTL + 垂直模式下折叠方向错误的问题，RTL 逻辑现在仅在横向布局下生效。[#56179](https://github.com/ant-design/ant-design/pull/56179) [@QDyanbing](https://github.com/QDyanbing)
+- 🐞 修复 Result 未向根节点透传 `data-*` 与 `aria-*` 属性的问题。[#56165](https://github.com/ant-design/ant-design/pull/56165) [@QDyanbing](https://github.com/QDyanbing)
+- 🐞 MISC: 修复：`theme.cssVar.prefix` 与 `theme.cssVar.key` 不支持传入空字符串的问题。[#56146](https://github.com/ant-design/ant-design/pull/56146) [@QDyanbing](https://github.com/QDyanbing)
+- 💄 提升 Breadcrumb 链接样式优先级以避免被全局样式覆盖。[#56137](https://github.com/ant-design/ant-design/pull/56137) [@guoyunhe](https://github.com/guoyunhe)
+- 🐞 修复 ConfigProvider `closable.placement` 配置失效的问题。[#55985](https://github.com/ant-design/ant-design/pull/55985) [@meet-student](https://github.com/meet-student)
+- 🐞 修复 Form `onValuesChange` 对存在嵌套数据的 Form.List 缺失内容的问题。[#56129](https://github.com/ant-design/ant-design/pull/56129) [@zombieJ](https://github.com/zombieJ)
+- 🐞 修复 Select `selectorBg` token 不生效的问题。[#56052](https://github.com/ant-design/ant-design/pull/56052) [@ug-hero](https://github.com/ug-hero)
+- 🐞 修复 Upload 进度条位置样式错误的问题。[#56194](https://github.com/ant-design/ant-design/pull/56194) [@QDyanbing](https://github.com/QDyanbing)
+
 ## 6.1.0
 
 `2025-12-08`
@@ -30,7 +65,7 @@ tag: vVERSION
   - 🐞 修复 Select 包含交互内容时「选择」选项未打开的问题。[#56054](https://github.com/ant-design/ant-design/pull/56054) [@yoyo837](https://github.com/yoyo837)
 - 🐞 修复 Table `cellFontSizeSM` 和 `cellFontSizeLG` token 不生效的问题。[#55770](https://github.com/ant-design/ant-design/pull/55770) [@guoyunhe](https://github.com/guoyunhe)
 - 🐞 修复 Button 部分 Token（primaryColor, dangerColor, defaultHoverBg, defaultActiveBg）在特定变体（solid, outlined, dashed）下不生效的问题。[#55934](https://github.com/ant-design/ant-design/pull/55934) [@tuzixiangs](https://github.com/tuzixiangs)
-- 💄 修复 Menu  组件 item 中定义的 style 不生效错误。[#56041](https://github.com/ant-design/ant-design/pull/56041) [@Wxh16144](https://github.com/Wxh16144) 
+- 💄 修复 Menu  组件 item 中定义的 style 不生效错误。[#56041](https://github.com/ant-design/ant-design/pull/56041) [@Wxh16144](https://github.com/Wxh16144)
 - 🛠 杂项：更新 `@ant-design/react-slick` 版本以删除 `classnames`。[#56080](https://github.com/ant-design/ant-design/pull/56080) [@yoyo837](https://github.com/yoyo837)
 - 🛠 杂项：迁移 `rc-overflow` 到  `@rc-component/overflow`、`rc-virtual-list` 到  `@rc-component/virtual-list` 以删除 `rc-util`。[#56074](https://github.com/ant-design/ant-design/pull/56074) [@yoyo837](https://github.com/yoyo837)
 - TypeScript
